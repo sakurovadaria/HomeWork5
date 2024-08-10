@@ -1,31 +1,31 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("Задача 1");
-        byte clientOS = 0;
-        if (clientOS == 0) {
+        byte clientOperatingSystem = 0;
+        if (clientOperatingSystem == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке.\n");
-        } else if (clientOS == 1) {
+        } else if (clientOperatingSystem == 1) {
             System.out.println("Установите версию приложения для Android по ссылке.\n");
         } else {
             System.out.println("Неверное значение.\n");
         }
 
         System.out.println("Задача 2");
-        byte clienOS = 1;
+        byte clientOperatingSystem1 = 1;
         int clientDeviceYear = 2015;
-        if (clienOS == 0 && clientDeviceYear < 2015) {
+        if (clientOperatingSystem1 == 0 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке.\n");
-        } else if (clienOS == 0 && clientDeviceYear >= 2015) {
+        } else if (clientOperatingSystem1 == 0 && clientDeviceYear >= 2015) {
             System.out.println("Установите обычную версию приложения для iOS по ссылке.\n");
-        } else if (clienOS == 1 && clientDeviceYear < 2015) {
+        } else if (clientOperatingSystem1 == 1 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке.\n");
-        } else if (clienOS == 1 && clientDeviceYear >= 2015) {
+        } else if (clientOperatingSystem1 == 1 && clientDeviceYear >= 2015) {
             System.out.println("Установите обычную версию приложения для Android по ссылке.\n");
         }
 
         System.out.println("Задача 3");
         int year = 2021;
-        if (year > 1584 && (year % 4 == 0 && (year % 100 != 100) || year % 400 == 0)) {
+        if (year > 1584 && (year % 4 == 0 && (year % 100 != 0) || year % 400 == 0)) {
             System.out.println(year + " год является високосным.\n");
         } else {
             System.out.println(year + " год не является високосным.\n");
